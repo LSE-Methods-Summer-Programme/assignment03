@@ -56,6 +56,8 @@ dbListTables(mydb)
 ## Queries
 
 Queries in **RSQLite** pass SQL code directly, using `dbGetQuery()`:
+
+__Note:__ Entries in **RSQLite** are not sorted.
     
 ```{r}
 dbGetQuery(mydb, 'SELECT * FROM airports LIMIT 5')
